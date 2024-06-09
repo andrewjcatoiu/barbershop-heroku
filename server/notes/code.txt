@@ -1,0 +1,67 @@
+Possible code for hashing passwords:
+
+
+// app.post("/login", (req, res) => {
+//     const { username, password} = req.body;
+//     const adminCommand = 'SELECT username, password, id FROM admin WHERE username = $1 AND password = $2';
+//     const adminParams = [username, password];
+//     const barberCommand = 'SELECT username, password, emp_id FROM employees WHERE username = $1 AND password = $2';
+//     const barberParams = [username, password];
+
+//     db.query(adminCommand, adminParams, (error, adminResults) => {
+//         if (error) {
+//             console.error("error executing query:", error);
+//             return res.redirect("/login");
+//         }
+
+//         if (adminResults.rowCount > 0) {
+//             const admin = adminResults.rows[0];
+//             bcrypt.compare(password, admin.password, (bcryptErr, bcryptResult) => {
+//                 if (bcryptErr) {
+//                     console.error("bcrypt error:", bcryptErr);
+//                     return res.redirect("/login");
+//                 }
+//                 if (bcryptResult) {
+//                     req.session.userID = admin.id;
+//                     return res.redirect("/schedule");
+//                 } else {
+//                     return res.redirect("/login");
+//                 }
+//             });
+//         } else {
+//             console.log("else statement")
+//             db.query(barberCommand, barberParams, (barberErr, barberResults) => {
+//                 console.log("reached query");
+//                 console.log(barberResults);
+//                 if (barberErr) {
+//                     console.error("Error executing employee query:", barberErr);
+//                     return res.redirect("/login");
+//                 }
+//                 if (barberResults.rowCount > 0) {
+//                     console.log("reached row count check")
+//                     const barber = barberResults.rows[0];
+//                     bcrypt.compare(password, barber.password, (bcryptErr, bcryptResult) => {
+//                         console.log("bcrypt compare callback executed");
+//                         console.log("bcryptResult:", bcryptResult);
+//                         if (bcryptErr) {
+//                             console.log("reached error check");
+//                             console.error("bcrypt error:", bcryptErr);
+//                             return res.redirect("/login");
+                            
+//                         }
+
+//                         if (bcryptResult) {
+//                             console.log("reached result check");
+//                             req.session.userID = barber.id;
+//                             return res.redirect(`/barber/${barber.id}`);
+//                         } else {
+//                             return res.redirect("/login");
+//                         }
+//                     });
+//                 } else {
+//                     res.redirect("/login");
+//                 }
+//             });
+//         }
+//     });
+// });

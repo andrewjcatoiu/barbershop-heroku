@@ -1,0 +1,43 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@syncfusion/ej2-base": "^22.2.5",
+    "@syncfusion/ej2-buttons": "^22.2.5",
+    "@syncfusion/ej2-calendars": "^22.2.5",
+    "@syncfusion/ej2-inputs": "^22.2.7",
+    "@syncfusion/ej2-lists": "^22.2.5",
+    "@syncfusion/ej2-popups": "^22.2.7",
+    "@types/codemirror": "^5.60.8",
+    "@types/crossroads": "^0.0.30",
+    "@types/es6-promise": "^3.3.0",
+    "@types/hasher": "^0.0.32",
+    "@types/marked": "^5.0.1",
+    "@types/moment-timezone": "^0.5.30",
+    "@types/signals": "^1.0.1",
+    "bcrypt": "^5.1.0",
+    "codemirror": "^6.0.1",
+    "cors": "^2.8.5",
+    "crossroads": "^0.12.2",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "fuse.js": "^6.6.2",
+    "hasher": "^1.2.0",
+    "hbs": "^4.2.0",
+    "marked": "^6.0.0",
+    "moment-timezone": "^0.5.43",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.22",
+    "pg": "^8.11.0"
+  }
+}

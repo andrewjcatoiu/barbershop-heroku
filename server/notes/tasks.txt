@@ -1,0 +1,11 @@
+Customer Side:
+-   email confirmation
+-   bad logo positioning on ipad/surface pro
+
+Employee Side:
+-   admin page
+    -   option to cancel appointment
+    -   schema for uploading details of employees to homepage
+    -   schema for updating services section
+    -   schema for updating pricing section
+    -   send cancellation email to customer

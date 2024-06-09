@@ -1,0 +1,7 @@
+GOOGLE MAPS API KEY:
+AIzaSyAdEXTh3ROZmjDhUKgwi85SkyYXU9--NpQ
+
+DUMMY EMPLOYEE HASHED PASSWORDS:
+first = $2a$12$A5oBOdSbFXzVq49gkxcpDOtrmq57VcKbDDAO89uyoFkcolzl6EOU2
+second = $2a$12$jfYK3mvgzpMDnW6l1EsdFuYG.ySW5Y4O/Qs6zuO87Rl6bpXazaMbq
+third = $2a$12$/iSrwgtEk8SIxXAbsVJ0a.TlzcVjvypnQLSQLkLAACqDyOt7wVNfS
